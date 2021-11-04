@@ -63,7 +63,7 @@ extension CreateContractorView: ViewModel {
 
             createContractorUseCase.createContractor(contractor: contractor)
 
-            preferences.accountId = contractor.id
+            preferences.contractorId = contractor.id
 
             state = .idle
         }

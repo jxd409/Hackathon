@@ -53,7 +53,8 @@ class Configuration {
                                                   GetProjectStatesUseCase.self])
 
         // controllers
-        container.add(MainView.ViewModel(), for: [ModalPresentationController.self])
+        container.add(MainView.ViewModel(), for: [ApplicationSwitcherUseCase.self,
+                                                  ModalPresentationController.self])
 
     }
 

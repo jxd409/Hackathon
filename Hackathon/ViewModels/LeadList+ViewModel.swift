@@ -37,7 +37,7 @@ extension LeadListView: ViewModel {
                         .sink { projectStates in
 
                             let filteredProjectStates = projectStates.filter { projectState in
-                                projectState.contractorId == self.preferences.accountId
+                                projectState.contractorId == self.preferences.contractorId
                             }
 
                             filteredProjectStates.forEach { projectState in

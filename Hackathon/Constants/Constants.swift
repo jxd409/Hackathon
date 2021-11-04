@@ -1,5 +1,9 @@
 struct Constants {
 
+    struct Build {
+        static let app = SWApplication.colorSnap
+    }
+
     struct FirebaseAPI {
         static let QA = "https://sw-probuy-debug.firebaseio.com/Hackathon"
         static let PRODUCTION = "https://sw-probuy-debug.firebaseio.com/Hackathon"
@@ -10,6 +14,6 @@ struct Constants {
     }
 
     struct Preferences {
-        static let accountIdKey = "accountId"
+        static let contractorId = "contractorId"
     }
 }

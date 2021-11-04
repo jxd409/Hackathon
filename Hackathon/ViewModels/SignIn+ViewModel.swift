@@ -32,7 +32,7 @@ extension SignInView: ViewModel {
 
                     guard let id = contractor?.id else { return }
 
-                    self.loginUseCase.login(accountId: id)
+                    self.loginUseCase.contractorLogin(contractorId: id)
                 }
                 .store(in: &cancellables)
         }

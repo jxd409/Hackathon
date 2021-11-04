@@ -1,6 +1,6 @@
 import Foundation
 
 protocol Preferences {
-    var accountId: String? { get set }
+    var contractorId: String? { get set }
     func clear()
 }

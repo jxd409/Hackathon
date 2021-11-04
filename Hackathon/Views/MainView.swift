@@ -8,6 +8,12 @@ struct MainView: View {
         
         NavigationView {
             VStack(spacing: 16) {
+                if viewModel.applicationType == .colorSnap {
+                    ProjectListView()
+                    NavigationLink(destination: CreateProjectView()) {
+                        Text("Create new project")
+                    }
+                } else {
                 if viewModel.isLoggedIn {
                     NavigationLink(destination: LeadListView()) {
                         Text("Show jobs available")
@@ -21,9 +27,10 @@ struct MainView: View {
                     }
 
                 }
+                }
             }
             .navigationBarTitleDisplayMode(.inline)
-            .navigationTitle("Pro App")
+            .navigationTitle(viewModel.applicationType.title)
             .modifier(HeaderModifier(model: .init()))
 
             .sheet(isPresented: $viewModel.modalIsActive) {

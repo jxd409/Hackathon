@@ -16,6 +16,14 @@ struct HeaderModifier: ViewModifier {
                     }
                     .foregroundColor(.white)
                 }
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button {
+                        model.state = .changeApp
+                    } label: {
+                        Text("switch app")
+                    }
+                    .foregroundColor(.white)
+                }
             }
     }
 }

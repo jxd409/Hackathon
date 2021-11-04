@@ -3,12 +3,12 @@ import Foundation
 extension UserDefaults: Preferences {
 
 
-    var accountId: String? {
+    var contractorId: String? {
         get {
-            string(forKey: Constants.Preferences.accountIdKey)
+            string(forKey: Constants.Preferences.contractorId)
         }
         set {
-            setValue(newValue, forKey: Constants.Preferences.accountIdKey)
+            setValue(newValue, forKey: Constants.Preferences.contractorId)
             update()
         }
     }
@@ -35,7 +35,7 @@ extension UserDefaults: LogoutUseCase {
 }
 
 extension UserDefaults: LogInUseCase {
-    func login(accountId: String) {
-        self.accountId = accountId
+    func contractorLogin(contractorId: String) {
+        self.contractorId = contractorId
     }
 }

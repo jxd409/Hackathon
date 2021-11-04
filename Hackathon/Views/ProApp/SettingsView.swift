@@ -7,12 +7,10 @@ struct SettingsView: View {
 
     var body: some View {
         VStack {
-            Spacer()
             Button("Logout >"){
                 model.logout()
                 dismiss()
             }
-            Spacer()
         }
     }
 }

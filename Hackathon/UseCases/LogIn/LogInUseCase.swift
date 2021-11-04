@@ -1,3 +1,3 @@
 protocol LogInUseCase {
-    func login(accountId: String)
+    func contractorLogin(contractorId: String)
 }
