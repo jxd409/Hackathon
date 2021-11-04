@@ -87,6 +87,7 @@
 		DB136D342733F82A007E48B6 /* SWApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB136D332733F82A007E48B6 /* SWApplication.swift */; };
 		DB136D372734108F007E48B6 /* ApplicationSwitcherUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB136D362734108F007E48B6 /* ApplicationSwitcherUseCase.swift */; };
 		DB136D3927341575007E48B6 /* ProjectListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB136D3827341575007E48B6 /* ProjectListView.swift */; };
+		DB136D3B27342933007E48B6 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB136D3A27342933007E48B6 /* Date+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -171,6 +172,7 @@
 		DB136D332733F82A007E48B6 /* SWApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWApplication.swift; sourceTree = "<group>"; };
 		DB136D362734108F007E48B6 /* ApplicationSwitcherUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationSwitcherUseCase.swift; sourceTree = "<group>"; };
 		DB136D3827341575007E48B6 /* ProjectListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectListView.swift; sourceTree = "<group>"; };
+		DB136D3A27342933007E48B6 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -301,6 +303,7 @@
 				DB136C772731C4BF007E48B6 /* Environment+Extensions.swift */,
 				DB136CE927335DE4007E48B6 /* Font+Extensions.swift */,
 				DB136CE527335DC5007E48B6 /* UINavigationBar+Extensions.swift */,
+				DB136D3A27342933007E48B6 /* Date+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -627,6 +630,7 @@
 				DB136C8B2731CD5C007E48B6 /* Project.swift in Sources */,
 				DB136D342733F82A007E48B6 /* SWApplication.swift in Sources */,
 				DB136C982731D5E3007E48B6 /* ContractorListPublisher.swift in Sources */,
+				DB136D3B27342933007E48B6 /* Date+Extensions.swift in Sources */,
 				DB136C962731D47A007E48B6 /* ValuePublisher.swift in Sources */,
 				DB136CBA27330BF8007E48B6 /* Customer.swift in Sources */,
 				DB136D372734108F007E48B6 /* ApplicationSwitcherUseCase.swift in Sources */,

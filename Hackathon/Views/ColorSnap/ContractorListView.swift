@@ -18,11 +18,12 @@ struct ContractorListView: View {
                         VStack (alignment: .leading, spacing: 5) {
                             Text(contractor.name)
                                 .font(.headline)
-                            Text("Location: \(contractor.zipCode)")
-                            Text("Available: \(contractor.leadTime)")
+                            Text("Zipcode: \(String(contractor.zipCode))")
+
+                            Text("Available: \(contractor.startDate?.getFormattedDate(format: "MM-dd-yyyy") ?? Date().getFormattedDate(format: "MM-dd-yyyy"))")
                         }
                         Spacer()
-                        Image(systemName: "arrow.forward")
+                        Image(systemName: "chevron.forward")
                     }
                 }
                 .foregroundColor(.black)
