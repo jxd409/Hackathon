@@ -3,6 +3,7 @@ import SwiftUI
 
 struct ContractorListView: View {
 
+    @Environment(\.dismiss) var dismiss
     @ObservedObject var viewModel: ViewModel
 
     var body: some View {
@@ -11,15 +12,20 @@ struct ContractorListView: View {
             ForEach(viewModel.contractors, id: \.self) { contractor in
                 Button {
                     viewModel.selectContractor(contractor: contractor)
+                    dismiss()
                 } label: {
-                    VStack (alignment: .leading, spacing: 5) {
-                        Text(contractor.name)
-                            .font(.headline)
-                        Text("Location: \(contractor.zipCode)")
-                        Text("Available: \(contractor.leadTime)")
-
+                    HStack {
+                        VStack (alignment: .leading, spacing: 5) {
+                            Text(contractor.name)
+                                .font(.headline)
+                            Text("Location: \(contractor.zipCode)")
+                            Text("Available: \(contractor.leadTime)")
+                        }
+                        Spacer()
+                        Image(systemName: "arrow.forward")
                     }
                 }
+                .foregroundColor(.black)
             }
         }
 

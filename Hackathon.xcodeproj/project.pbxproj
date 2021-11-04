@@ -82,10 +82,8 @@
 		DB136D1C27337304007E48B6 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB136D1B27337304007E48B6 /* SignInView.swift */; };
 		DB136D1E27337345007E48B6 /* SignIn+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB136D1D27337345007E48B6 /* SignIn+ViewModel.swift */; };
 		DB136D20273373BF007E48B6 /* LogInUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB136D1F273373BF007E48B6 /* LogInUseCase.swift */; };
-		DB136D292733F6EF007E48B6 /* CustomerProfileHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB136D252733F6EF007E48B6 /* CustomerProfileHomeView.swift */; };
 		DB136D2A2733F6EF007E48B6 /* CreateProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB136D262733F6EF007E48B6 /* CreateProjectView.swift */; };
 		DB136D2B2733F6EF007E48B6 /* ContractorListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB136D272733F6EF007E48B6 /* ContractorListView.swift */; };
-		DB136D2C2733F6EF007E48B6 /* ProDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB136D282733F6EF007E48B6 /* ProDashboardView.swift */; };
 		DB136D342733F82A007E48B6 /* SWApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB136D332733F82A007E48B6 /* SWApplication.swift */; };
 		DB136D372734108F007E48B6 /* ApplicationSwitcherUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB136D362734108F007E48B6 /* ApplicationSwitcherUseCase.swift */; };
 		DB136D3927341575007E48B6 /* ProjectListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB136D3827341575007E48B6 /* ProjectListView.swift */; };
@@ -168,10 +166,8 @@
 		DB136D1B27337304007E48B6 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		DB136D1D27337345007E48B6 /* SignIn+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignIn+ViewModel.swift"; sourceTree = "<group>"; };
 		DB136D1F273373BF007E48B6 /* LogInUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInUseCase.swift; sourceTree = "<group>"; };
-		DB136D252733F6EF007E48B6 /* CustomerProfileHomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomerProfileHomeView.swift; sourceTree = "<group>"; };
 		DB136D262733F6EF007E48B6 /* CreateProjectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateProjectView.swift; sourceTree = "<group>"; };
 		DB136D272733F6EF007E48B6 /* ContractorListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContractorListView.swift; sourceTree = "<group>"; };
-		DB136D282733F6EF007E48B6 /* ProDashboardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProDashboardView.swift; sourceTree = "<group>"; };
 		DB136D332733F82A007E48B6 /* SWApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWApplication.swift; sourceTree = "<group>"; };
 		DB136D362734108F007E48B6 /* ApplicationSwitcherUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationSwitcherUseCase.swift; sourceTree = "<group>"; };
 		DB136D3827341575007E48B6 /* ProjectListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectListView.swift; sourceTree = "<group>"; };
@@ -507,8 +503,6 @@
 			children = (
 				DB136D262733F6EF007E48B6 /* CreateProjectView.swift */,
 				DB136D272733F6EF007E48B6 /* ContractorListView.swift */,
-				DB136D282733F6EF007E48B6 /* ProDashboardView.swift */,
-				DB136D252733F6EF007E48B6 /* CustomerProfileHomeView.swift */,
 				DB136D3827341575007E48B6 /* ProjectListView.swift */,
 			);
 			path = ColorSnap;
@@ -619,7 +613,6 @@
 				DB136CA32732DCB2007E48B6 /* CreateContractorUseCase.swift in Sources */,
 				DB136CEE27335E73007E48B6 /* ViewModel.swift in Sources */,
 				DB136C932731D38B007E48B6 /* CreateProjectUseCase.swift in Sources */,
-				DB136D2C2733F6EF007E48B6 /* ProDashboardView.swift in Sources */,
 				DB136CAB2732E463007E48B6 /* UpdateProjectUseCase.swift in Sources */,
 				DB136CBC27330C25007E48B6 /* ProjectState.swift in Sources */,
 				DB136CB12732F4FC007E48B6 /* GetContractorsUseCase.swift in Sources */,
@@ -635,7 +628,6 @@
 				DB136D342733F82A007E48B6 /* SWApplication.swift in Sources */,
 				DB136C982731D5E3007E48B6 /* ContractorListPublisher.swift in Sources */,
 				DB136C962731D47A007E48B6 /* ValuePublisher.swift in Sources */,
-				DB136D292733F6EF007E48B6 /* CustomerProfileHomeView.swift in Sources */,
 				DB136CBA27330BF8007E48B6 /* Customer.swift in Sources */,
 				DB136D372734108F007E48B6 /* ApplicationSwitcherUseCase.swift in Sources */,
 				DB136C782731C4BF007E48B6 /* Environment+Extensions.swift in Sources */,

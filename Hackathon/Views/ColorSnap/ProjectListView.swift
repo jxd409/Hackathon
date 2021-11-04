@@ -6,17 +6,15 @@ struct ProjectListView: View {
     @ObservedObject var viewModel = ViewModel()
 
     var body: some View {
-
         List {
-            ForEach(viewModel.projects, id: \.self) { project in
-
-                NavigationLink(destination: CreateProjectView(viewModel: .init(project: project))) {
-                    Text(project.name)
+            Section(header: Text("My Projects")) {
+                ForEach(viewModel.projects, id: \.self) { project in
+                    NavigationLink(destination: CreateProjectView(viewModel: .init(project: project))) {
+                        Text(project.name)
+                    }
                 }
             }
         }
-
-        .navigationTitle("My Projects")
     }
 }
 
