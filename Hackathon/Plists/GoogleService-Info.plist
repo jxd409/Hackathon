@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>220233360447-sdkm6t8rmveem4ol1djvb0cu71uh8rvq.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.220233360447-sdkm6t8rmveem4ol1djvb0cu71uh8rvq</string>
+	<key>API_KEY</key>
+	<string>AIzaSyB5gD145KOyCNmbqMs9m07eVojhpYN4H4k</string>
+	<key>GCM_SENDER_ID</key>
+	<string>220233360447</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.sherwin.Hackathon</string>
+	<key>PROJECT_ID</key>
+	<string>sw-probuy-debug</string>
+	<key>STORAGE_BUCKET</key>
+	<string>sw-probuy-debug.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:220233360447:ios:1e3bfa5087d90cbd</string>
+	<key>DATABASE_URL</key>
+	<string>https://sw-probuy-debug.firebaseio.com</string>
+</dict>
+</plist>

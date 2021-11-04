@@ -1,0 +1,865 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DB136C4F2731C130007E48B6 /* HackathonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB136C4E2731C130007E48B6 /* HackathonApp.swift */; };
+		DB136C532731C133007E48B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB136C522731C133007E48B6 /* Assets.xcassets */; };
+		DB136C562731C133007E48B6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB136C552731C133007E48B6 /* Preview Assets.xcassets */; };
+		DB136C5E2731C177007E48B6 /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB136C5D2731C177007E48B6 /* FirebaseService.swift */; };
+		DB136C612731C19E007E48B6 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB136C5F2731C19E007E48B6 /* Logger.swift */; };
+		DB136C622731C19E007E48B6 /* SWLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB136C602731C19E007E48B6 /* SWLogger.swift */; };
+		DB136C662731C1A8007E48B6 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB136C632731C1A8007E48B6 /* Cache.swift */; };
+		DB136C672731C1A8007E48B6 /* SWCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB136C642731C1A8007E48B6 /* SWCache.swift */; };
+		DB136C682731C1A8007E48B6 /* CacheItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB136C652731C1A8007E48B6 /* CacheItem.swift */; };
+		DB136C6A2731C1AD007E48B6 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB136C692731C1AD007E48B6 /* DIContainer.swift */; };
+		DB136C6C2731C1B3007E48B6 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB136C6B2731C1B3007E48B6 /* Configuration.swift */; };
+		DB136C722731C488007E48B6 /* SWEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB136C712731C488007E48B6 /* SWEnvironment.swift */; };
+		DB136C742731C48B007E48B6 /* ServiceErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB136C732731C48B007E48B6 /* ServiceErrors.swift */; };
+		DB136C782731C4BF007E48B6 /* Environment+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB136C772731C4BF007E48B6 /* Environment+Extensions.swift */; };
+		DB136C7A2731C4D8007E48B6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB136C792731C4D8007E48B6 /* Constants.swift */; };
+		DB136C802731C734007E48B6 /* Contractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB136C7F2731C734007E48B6 /* Contractor.swift */; };
+		DB136C822731C7C0007E48B6 /* ProjectType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB136C812731C7C0007E48B6 /* ProjectType.swift */; };
+		DB136C852731C870007E48B6 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB136C842731C870007E48B6 /* Interactor.swift */; };
+		DB136C872731C883007E48B6 /* FirebaseInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB136C862731C883007E48B6 /* FirebaseInteractor.swift */; };
+		DB136C892731CD3C007E48B6 /* GetProjectsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB136C882731CD3C007E48B6 /* GetProjectsUseCase.swift */; };
+		DB136C8B2731CD5C007E48B6 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB136C8A2731CD5C007E48B6 /* Project.swift */; };
+		DB136C912731D285007E48B6 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = DB136C902731D285007E48B6 /* FirebaseDatabase */; };
+		DB136C932731D38B007E48B6 /* CreateProjectUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB136C922731D38B007E48B6 /* CreateProjectUseCase.swift */; };
+		DB136C962731D47A007E48B6 /* ValuePublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB136C952731D47A007E48B6 /* ValuePublisher.swift */; };
+		DB136C982731D5E3007E48B6 /* ContractorListPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB136C972731D5E3007E48B6 /* ContractorListPublisher.swift */; };
+		DB136C9A2731D700007E48B6 /* ProjectListPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB136C992731D700007E48B6 /* ProjectListPublisher.swift */; };
+		DB136C9C2731D9E5007E48B6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DB136C9B2731D9E5007E48B6 /* GoogleService-Info.plist */; };
+		DB136CA12732C5C9007E48B6 /* DecodeArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB136CA02732C5C9007E48B6 /* DecodeArray.swift */; };
+		DB136CA32732DCB2007E48B6 /* CreateContractorUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB136CA22732DCB2007E48B6 /* CreateContractorUseCase.swift */; };
+		DB136CA72732DE98007E48B6 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB136CA42732DE98007E48B6 /* MainView.swift */; };
+		DB136CAB2732E463007E48B6 /* UpdateProjectUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB136CAA2732E463007E48B6 /* UpdateProjectUseCase.swift */; };
+		DB136CAD2732E47C007E48B6 /* UpdateContractorUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB136CAC2732E47C007E48B6 /* UpdateContractorUseCase.swift */; };
+		DB136CB12732F4FC007E48B6 /* GetContractorsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB136CB02732F4FC007E48B6 /* GetContractorsUseCase.swift */; };
+		DB136CB427330413007E48B6 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB136CB327330413007E48B6 /* Preferences.swift */; };
+		DB136CB627330448007E48B6 /* UserDefaults+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB136CB527330448007E48B6 /* UserDefaults+Extensions.swift */; };
+		DB136CB827330503007E48B6 /* CustomerListPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB136CB727330502007E48B6 /* CustomerListPublisher.swift */; };
+		DB136CBA27330BF8007E48B6 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB136CB927330BF8007E48B6 /* Customer.swift */; };
+		DB136CBC27330C25007E48B6 /* ProjectState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB136CBB27330C25007E48B6 /* ProjectState.swift */; };
+		DB136CBE27330C71007E48B6 /* ProjectStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB136CBD27330C71007E48B6 /* ProjectStatus.swift */; };
+		DB136CC027330DC3007E48B6 /* ProjectStateListPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB136CBF27330DC3007E48B6 /* ProjectStateListPublisher.swift */; };
+		DB136CC227330E4A007E48B6 /* GetCustomersUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB136CC127330E4A007E48B6 /* GetCustomersUseCase.swift */; };
+		DB136CC427330E5C007E48B6 /* GetProjectStatesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB136CC327330E5C007E48B6 /* GetProjectStatesUseCase.swift */; };
+		DB136CCA27331467007E48B6 /* CreateCustomerUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB136CC927331467007E48B6 /* CreateCustomerUseCase.swift */; };
+		DB136CCC2733147B007E48B6 /* CreateProjectStateUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB136CCB2733147B007E48B6 /* CreateProjectStateUseCase.swift */; };
+		DB136CCE27331654007E48B6 /* UpdateCustomerUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB136CCD27331654007E48B6 /* UpdateCustomerUseCase.swift */; };
+		DB136CD02733165E007E48B6 /* UpdateProjectStateUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB136CCF2733165E007E48B6 /* UpdateProjectStateUseCase.swift */; };
+		DB136CD227331E54007E48B6 /* LeadDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB136CD127331E54007E48B6 /* LeadDetailView.swift */; };
+		DB136CD527331E85007E48B6 /* LeadListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB136CD327331E84007E48B6 /* LeadListView.swift */; };
+		DB136CD627331E85007E48B6 /* CreateContractorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB136CD427331E85007E48B6 /* CreateContractorView.swift */; };
+		DB136CD927335454007E48B6 /* LeadDetail+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB136CD827335454007E48B6 /* LeadDetail+ViewModel.swift */; };
+		DB136CDB27335479007E48B6 /* CustomerInfoLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB136CDA27335479007E48B6 /* CustomerInfoLabelView.swift */; };
+		DB136CDE273354AC007E48B6 /* LeadList+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB136CDD273354AC007E48B6 /* LeadList+ViewModel.swift */; };
+		DB136CE0273354D1007E48B6 /* CreateContractor+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB136CDF273354D1007E48B6 /* CreateContractor+ViewModel.swift */; };
+		DB136CE2273354ED007E48B6 /* Main+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB136CE1273354ED007E48B6 /* Main+ViewModel.swift */; };
+		DB136CE427335DB7007E48B6 /* HeaderModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB136CE327335DB7007E48B6 /* HeaderModifier.swift */; };
+		DB136CE627335DC5007E48B6 /* UINavigationBar+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB136CE527335DC5007E48B6 /* UINavigationBar+Extensions.swift */; };
+		DB136CE827335DD9007E48B6 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB136CE727335DD9007E48B6 /* Color+Extension.swift */; };
+		DB136CEA27335DE4007E48B6 /* Font+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB136CE927335DE4007E48B6 /* Font+Extensions.swift */; };
+		DB136CEC27335E5E007E48B6 /* Header+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB136CEB27335E5E007E48B6 /* Header+ViewModel.swift */; };
+		DB136CEE27335E73007E48B6 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB136CED27335E73007E48B6 /* ViewModel.swift */; };
+		DB136CF027335F2F007E48B6 /* ModalPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB136CEF27335F2F007E48B6 /* ModalPresentationController.swift */; };
+		DB136CF427336394007E48B6 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB136CF327336394007E48B6 /* Colors.xcassets */; };
+		DB136D0B2733656A007E48B6 /* OpenSans-CondBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB136D052733656A007E48B6 /* OpenSans-CondBold.ttf */; };
+		DB136D0C2733656A007E48B6 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB136D062733656A007E48B6 /* OpenSans-Regular.ttf */; };
+		DB136D0D2733656A007E48B6 /* mono.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB136D072733656A007E48B6 /* mono.ttf */; };
+		DB136D0E2733656A007E48B6 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB136D082733656A007E48B6 /* OpenSans-Bold.ttf */; };
+		DB136D0F2733656A007E48B6 /* OpenSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB136D092733656A007E48B6 /* OpenSans-ExtraBold.ttf */; };
+		DB136D102733656A007E48B6 /* OpenSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB136D0A2733656A007E48B6 /* OpenSans-SemiBold.ttf */; };
+		DB136D14273368FF007E48B6 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB136D13273368FF007E48B6 /* SettingsView.swift */; };
+		DB136D1627336916007E48B6 /* SettingsView+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB136D1527336915007E48B6 /* SettingsView+ViewModel.swift */; };
+		DB136D1827336946007E48B6 /* LogoutUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB136D1727336946007E48B6 /* LogoutUseCase.swift */; };
+		DB136D1A27336AE0007E48B6 /* PreferencesPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB136D1927336AE0007E48B6 /* PreferencesPublisher.swift */; };
+		DB136D1C27337304007E48B6 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB136D1B27337304007E48B6 /* SignInView.swift */; };
+		DB136D1E27337345007E48B6 /* SignIn+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB136D1D27337345007E48B6 /* SignIn+ViewModel.swift */; };
+		DB136D20273373BF007E48B6 /* LogInUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB136D1F273373BF007E48B6 /* LogInUseCase.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DB136C4B2731C130007E48B6 /* Hackathon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hackathon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB136C4E2731C130007E48B6 /* HackathonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackathonApp.swift; sourceTree = "<group>"; };
+		DB136C522731C133007E48B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DB136C552731C133007E48B6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DB136C5D2731C177007E48B6 /* FirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
+		DB136C5F2731C19E007E48B6 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		DB136C602731C19E007E48B6 /* SWLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWLogger.swift; sourceTree = "<group>"; };
+		DB136C632731C1A8007E48B6 /* Cache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
+		DB136C642731C1A8007E48B6 /* SWCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWCache.swift; sourceTree = "<group>"; };
+		DB136C652731C1A8007E48B6 /* CacheItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheItem.swift; sourceTree = "<group>"; };
+		DB136C692731C1AD007E48B6 /* DIContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
+		DB136C6B2731C1B3007E48B6 /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		DB136C712731C488007E48B6 /* SWEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWEnvironment.swift; sourceTree = "<group>"; };
+		DB136C732731C48B007E48B6 /* ServiceErrors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceErrors.swift; sourceTree = "<group>"; };
+		DB136C772731C4BF007E48B6 /* Environment+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Environment+Extensions.swift"; sourceTree = "<group>"; };
+		DB136C792731C4D8007E48B6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		DB136C7F2731C734007E48B6 /* Contractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contractor.swift; sourceTree = "<group>"; };
+		DB136C812731C7C0007E48B6 /* ProjectType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectType.swift; sourceTree = "<group>"; };
+		DB136C842731C870007E48B6 /* Interactor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
+		DB136C862731C883007E48B6 /* FirebaseInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseInteractor.swift; sourceTree = "<group>"; };
+		DB136C882731CD3C007E48B6 /* GetProjectsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetProjectsUseCase.swift; sourceTree = "<group>"; };
+		DB136C8A2731CD5C007E48B6 /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
+		DB136C922731D38B007E48B6 /* CreateProjectUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProjectUseCase.swift; sourceTree = "<group>"; };
+		DB136C952731D47A007E48B6 /* ValuePublisher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValuePublisher.swift; sourceTree = "<group>"; };
+		DB136C972731D5E3007E48B6 /* ContractorListPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractorListPublisher.swift; sourceTree = "<group>"; };
+		DB136C992731D700007E48B6 /* ProjectListPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectListPublisher.swift; sourceTree = "<group>"; };
+		DB136C9B2731D9E5007E48B6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DB136CA02732C5C9007E48B6 /* DecodeArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodeArray.swift; sourceTree = "<group>"; };
+		DB136CA22732DCB2007E48B6 /* CreateContractorUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateContractorUseCase.swift; sourceTree = "<group>"; };
+		DB136CA42732DE98007E48B6 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		DB136CAA2732E463007E48B6 /* UpdateProjectUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateProjectUseCase.swift; sourceTree = "<group>"; };
+		DB136CAC2732E47C007E48B6 /* UpdateContractorUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateContractorUseCase.swift; sourceTree = "<group>"; };
+		DB136CB02732F4FC007E48B6 /* GetContractorsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetContractorsUseCase.swift; sourceTree = "<group>"; };
+		DB136CB327330413007E48B6 /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
+		DB136CB527330448007E48B6 /* UserDefaults+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extensions.swift"; sourceTree = "<group>"; };
+		DB136CB727330502007E48B6 /* CustomerListPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerListPublisher.swift; sourceTree = "<group>"; };
+		DB136CB927330BF8007E48B6 /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
+		DB136CBB27330C25007E48B6 /* ProjectState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectState.swift; sourceTree = "<group>"; };
+		DB136CBD27330C71007E48B6 /* ProjectStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectStatus.swift; sourceTree = "<group>"; };
+		DB136CBF27330DC3007E48B6 /* ProjectStateListPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectStateListPublisher.swift; sourceTree = "<group>"; };
+		DB136CC127330E4A007E48B6 /* GetCustomersUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCustomersUseCase.swift; sourceTree = "<group>"; };
+		DB136CC327330E5C007E48B6 /* GetProjectStatesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetProjectStatesUseCase.swift; sourceTree = "<group>"; };
+		DB136CC927331467007E48B6 /* CreateCustomerUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCustomerUseCase.swift; sourceTree = "<group>"; };
+		DB136CCB2733147B007E48B6 /* CreateProjectStateUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProjectStateUseCase.swift; sourceTree = "<group>"; };
+		DB136CCD27331654007E48B6 /* UpdateCustomerUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateCustomerUseCase.swift; sourceTree = "<group>"; };
+		DB136CCF2733165E007E48B6 /* UpdateProjectStateUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateProjectStateUseCase.swift; sourceTree = "<group>"; };
+		DB136CD127331E54007E48B6 /* LeadDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeadDetailView.swift; sourceTree = "<group>"; };
+		DB136CD327331E84007E48B6 /* LeadListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeadListView.swift; sourceTree = "<group>"; };
+		DB136CD427331E85007E48B6 /* CreateContractorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateContractorView.swift; sourceTree = "<group>"; };
+		DB136CD827335454007E48B6 /* LeadDetail+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LeadDetail+ViewModel.swift"; sourceTree = "<group>"; };
+		DB136CDA27335479007E48B6 /* CustomerInfoLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerInfoLabelView.swift; sourceTree = "<group>"; };
+		DB136CDD273354AC007E48B6 /* LeadList+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LeadList+ViewModel.swift"; sourceTree = "<group>"; };
+		DB136CDF273354D1007E48B6 /* CreateContractor+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CreateContractor+ViewModel.swift"; sourceTree = "<group>"; };
+		DB136CE1273354ED007E48B6 /* Main+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Main+ViewModel.swift"; sourceTree = "<group>"; };
+		DB136CE327335DB7007E48B6 /* HeaderModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderModifier.swift; sourceTree = "<group>"; };
+		DB136CE527335DC5007E48B6 /* UINavigationBar+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+Extensions.swift"; sourceTree = "<group>"; };
+		DB136CE727335DD9007E48B6 /* Color+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		DB136CE927335DE4007E48B6 /* Font+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Font+Extensions.swift"; sourceTree = "<group>"; };
+		DB136CEB27335E5E007E48B6 /* Header+ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Header+ViewModel.swift"; sourceTree = "<group>"; };
+		DB136CED27335E73007E48B6 /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		DB136CEF27335F2F007E48B6 /* ModalPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalPresentationController.swift; sourceTree = "<group>"; };
+		DB136CF327336394007E48B6 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		DB136CF7273363D0007E48B6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB136D052733656A007E48B6 /* OpenSans-CondBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-CondBold.ttf"; sourceTree = "<group>"; };
+		DB136D062733656A007E48B6 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		DB136D072733656A007E48B6 /* mono.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = mono.ttf; sourceTree = "<group>"; };
+		DB136D082733656A007E48B6 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		DB136D092733656A007E48B6 /* OpenSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBold.ttf"; sourceTree = "<group>"; };
+		DB136D0A2733656A007E48B6 /* OpenSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		DB136D13273368FF007E48B6 /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		DB136D1527336915007E48B6 /* SettingsView+ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SettingsView+ViewModel.swift"; sourceTree = "<group>"; };
+		DB136D1727336946007E48B6 /* LogoutUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutUseCase.swift; sourceTree = "<group>"; };
+		DB136D1927336AE0007E48B6 /* PreferencesPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesPublisher.swift; sourceTree = "<group>"; };
+		DB136D1B27337304007E48B6 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		DB136D1D27337345007E48B6 /* SignIn+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignIn+ViewModel.swift"; sourceTree = "<group>"; };
+		DB136D1F273373BF007E48B6 /* LogInUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInUseCase.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DB136C482731C130007E48B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB136C912731D285007E48B6 /* FirebaseDatabase in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DB136C422731C130007E48B6 = {
+			isa = PBXGroup;
+			children = (
+				DB136C4D2731C130007E48B6 /* Hackathon */,
+				DB136C4C2731C130007E48B6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DB136C4C2731C130007E48B6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB136C4B2731C130007E48B6 /* Hackathon.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DB136C4D2731C130007E48B6 /* Hackathon */ = {
+			isa = PBXGroup;
+			children = (
+				DB136C4E2731C130007E48B6 /* HackathonApp.swift */,
+				DB136CF7273363D0007E48B6 /* Info.plist */,
+				DB136D1227336583007E48B6 /* Assets */,
+				DB136C9D2731DB10007E48B6 /* Configuration */,
+				DB136CF127335F87007E48B6 /* Controllers */,
+				DB136C9E2731DB1A007E48B6 /* Constants */,
+				DB136C752731C48F007E48B6 /* Enums */,
+				DB136C7E2731C716007E48B6 /* Entities */,
+				DB136C762731C4AF007E48B6 /* Extensions */,
+				DB136C832731C85E007E48B6 /* Interactor */,
+				DB136C6F2731C413007E48B6 /* Logger */,
+				DB136CF227335F93007E48B6 /* Modifiers */,
+				DB136C9F2731DB26007E48B6 /* Plists */,
+				DB136C942731D453007E48B6 /* Publishers */,
+				DB136C6D2731C1BE007E48B6 /* Storage */,
+				DB136C5C2731C16C007E48B6 /* Services */,
+				DB136C7B2731C6B0007E48B6 /* UseCases */,
+				DB136CD72733543F007E48B6 /* ViewModels */,
+				DB136C702731C422007E48B6 /* Views */,
+				DB136C542731C133007E48B6 /* Preview Content */,
+			);
+			path = Hackathon;
+			sourceTree = "<group>";
+		};
+		DB136C542731C133007E48B6 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DB136C552731C133007E48B6 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DB136C5C2731C16C007E48B6 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DB136C5D2731C177007E48B6 /* FirebaseService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		DB136C6D2731C1BE007E48B6 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				DB136C6E2731C409007E48B6 /* Cache */,
+				DB136CB227330401007E48B6 /* Preferences */,
+				DB136C692731C1AD007E48B6 /* DIContainer.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		DB136C6E2731C409007E48B6 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				DB136C632731C1A8007E48B6 /* Cache.swift */,
+				DB136C652731C1A8007E48B6 /* CacheItem.swift */,
+				DB136C642731C1A8007E48B6 /* SWCache.swift */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		DB136C6F2731C413007E48B6 /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				DB136C5F2731C19E007E48B6 /* Logger.swift */,
+				DB136C602731C19E007E48B6 /* SWLogger.swift */,
+			);
+			path = Logger;
+			sourceTree = "<group>";
+		};
+		DB136C702731C422007E48B6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DB136CDC27335483007E48B6 /* Supporting */,
+				DB136CD427331E85007E48B6 /* CreateContractorView.swift */,
+				DB136CD127331E54007E48B6 /* LeadDetailView.swift */,
+				DB136CD327331E84007E48B6 /* LeadListView.swift */,
+				DB136CA42732DE98007E48B6 /* MainView.swift */,
+				DB136D13273368FF007E48B6 /* SettingsView.swift */,
+				DB136D1B27337304007E48B6 /* SignInView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DB136C752731C48F007E48B6 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				DB136C712731C488007E48B6 /* SWEnvironment.swift */,
+				DB136C732731C48B007E48B6 /* ServiceErrors.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		DB136C762731C4AF007E48B6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DB136CE727335DD9007E48B6 /* Color+Extension.swift */,
+				DB136C772731C4BF007E48B6 /* Environment+Extensions.swift */,
+				DB136CE927335DE4007E48B6 /* Font+Extensions.swift */,
+				DB136CE527335DC5007E48B6 /* UINavigationBar+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DB136C7B2731C6B0007E48B6 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				DB136D21273373C4007E48B6 /* LogIn */,
+				DB136CC627331441007E48B6 /* Create */,
+				DB136CC82733144A007E48B6 /* Get */,
+				DB136CC727331446007E48B6 /* Update */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		DB136C7E2731C716007E48B6 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				DB136CC527331335007E48B6 /* Utils */,
+				DB136CB927330BF8007E48B6 /* Customer.swift */,
+				DB136C8A2731CD5C007E48B6 /* Project.swift */,
+				DB136C7F2731C734007E48B6 /* Contractor.swift */,
+				DB136CBB27330C25007E48B6 /* ProjectState.swift */,
+				DB136C812731C7C0007E48B6 /* ProjectType.swift */,
+				DB136CBD27330C71007E48B6 /* ProjectStatus.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		DB136C832731C85E007E48B6 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				DB136C842731C870007E48B6 /* Interactor.swift */,
+				DB136C862731C883007E48B6 /* FirebaseInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		DB136C942731D453007E48B6 /* Publishers */ = {
+			isa = PBXGroup;
+			children = (
+				DB136C952731D47A007E48B6 /* ValuePublisher.swift */,
+				DB136C972731D5E3007E48B6 /* ContractorListPublisher.swift */,
+				DB136CB727330502007E48B6 /* CustomerListPublisher.swift */,
+				DB136D1927336AE0007E48B6 /* PreferencesPublisher.swift */,
+				DB136C992731D700007E48B6 /* ProjectListPublisher.swift */,
+				DB136CBF27330DC3007E48B6 /* ProjectStateListPublisher.swift */,
+			);
+			path = Publishers;
+			sourceTree = "<group>";
+		};
+		DB136C9D2731DB10007E48B6 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				DB136C6B2731C1B3007E48B6 /* Configuration.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		DB136C9E2731DB1A007E48B6 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				DB136C792731C4D8007E48B6 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		DB136C9F2731DB26007E48B6 /* Plists */ = {
+			isa = PBXGroup;
+			children = (
+				DB136C9B2731D9E5007E48B6 /* GoogleService-Info.plist */,
+			);
+			path = Plists;
+			sourceTree = "<group>";
+		};
+		DB136CB227330401007E48B6 /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				DB136CB327330413007E48B6 /* Preferences.swift */,
+				DB136CB527330448007E48B6 /* UserDefaults+Extensions.swift */,
+			);
+			path = Preferences;
+			sourceTree = "<group>";
+		};
+		DB136CC527331335007E48B6 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				DB136CA02732C5C9007E48B6 /* DecodeArray.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		DB136CC627331441007E48B6 /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				DB136C922731D38B007E48B6 /* CreateProjectUseCase.swift */,
+				DB136CC927331467007E48B6 /* CreateCustomerUseCase.swift */,
+				DB136CA22732DCB2007E48B6 /* CreateContractorUseCase.swift */,
+				DB136CCB2733147B007E48B6 /* CreateProjectStateUseCase.swift */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		DB136CC727331446007E48B6 /* Update */ = {
+			isa = PBXGroup;
+			children = (
+				DB136CAA2732E463007E48B6 /* UpdateProjectUseCase.swift */,
+				DB136CCD27331654007E48B6 /* UpdateCustomerUseCase.swift */,
+				DB136CAC2732E47C007E48B6 /* UpdateContractorUseCase.swift */,
+				DB136CCF2733165E007E48B6 /* UpdateProjectStateUseCase.swift */,
+			);
+			path = Update;
+			sourceTree = "<group>";
+		};
+		DB136CC82733144A007E48B6 /* Get */ = {
+			isa = PBXGroup;
+			children = (
+				DB136C882731CD3C007E48B6 /* GetProjectsUseCase.swift */,
+				DB136CC127330E4A007E48B6 /* GetCustomersUseCase.swift */,
+				DB136CB02732F4FC007E48B6 /* GetContractorsUseCase.swift */,
+				DB136CC327330E5C007E48B6 /* GetProjectStatesUseCase.swift */,
+			);
+			path = Get;
+			sourceTree = "<group>";
+		};
+		DB136CD72733543F007E48B6 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				DB136CDF273354D1007E48B6 /* CreateContractor+ViewModel.swift */,
+				DB136CEB27335E5E007E48B6 /* Header+ViewModel.swift */,
+				DB136CD827335454007E48B6 /* LeadDetail+ViewModel.swift */,
+				DB136CDD273354AC007E48B6 /* LeadList+ViewModel.swift */,
+				DB136CE1273354ED007E48B6 /* Main+ViewModel.swift */,
+				DB136D1527336915007E48B6 /* SettingsView+ViewModel.swift */,
+				DB136D1D27337345007E48B6 /* SignIn+ViewModel.swift */,
+				DB136CED27335E73007E48B6 /* ViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		DB136CDC27335483007E48B6 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				DB136CDA27335479007E48B6 /* CustomerInfoLabelView.swift */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		DB136CF127335F87007E48B6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DB136CEF27335F2F007E48B6 /* ModalPresentationController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DB136CF227335F93007E48B6 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				DB136CE327335DB7007E48B6 /* HeaderModifier.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		DB136D1127336574007E48B6 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				DB136D072733656A007E48B6 /* mono.ttf */,
+				DB136D082733656A007E48B6 /* OpenSans-Bold.ttf */,
+				DB136D052733656A007E48B6 /* OpenSans-CondBold.ttf */,
+				DB136D092733656A007E48B6 /* OpenSans-ExtraBold.ttf */,
+				DB136D062733656A007E48B6 /* OpenSans-Regular.ttf */,
+				DB136D0A2733656A007E48B6 /* OpenSans-SemiBold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		DB136D1227336583007E48B6 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				DB136C522731C133007E48B6 /* Assets.xcassets */,
+				DB136CF327336394007E48B6 /* Colors.xcassets */,
+				DB136D1127336574007E48B6 /* Fonts */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		DB136D21273373C4007E48B6 /* LogIn */ = {
+			isa = PBXGroup;
+			children = (
+				DB136D1F273373BF007E48B6 /* LogInUseCase.swift */,
+				DB136D1727336946007E48B6 /* LogoutUseCase.swift */,
+			);
+			path = LogIn;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DB136C4A2731C130007E48B6 /* Hackathon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB136C592731C133007E48B6 /* Build configuration list for PBXNativeTarget "Hackathon" */;
+			buildPhases = (
+				DB136C472731C130007E48B6 /* Sources */,
+				DB136C482731C130007E48B6 /* Frameworks */,
+				DB136C492731C130007E48B6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Hackathon;
+			packageProductDependencies = (
+				DB136C902731D285007E48B6 /* FirebaseDatabase */,
+			);
+			productName = Hackathon;
+			productReference = DB136C4B2731C130007E48B6 /* Hackathon.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DB136C432731C130007E48B6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					DB136C4A2731C130007E48B6 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = DB136C462731C130007E48B6 /* Build configuration list for PBXProject "Hackathon" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DB136C422731C130007E48B6;
+			packageReferences = (
+				DB136C8F2731D285007E48B6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = DB136C4C2731C130007E48B6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DB136C4A2731C130007E48B6 /* Hackathon */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DB136C492731C130007E48B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB136C562731C133007E48B6 /* Preview Assets.xcassets in Resources */,
+				DB136D102733656A007E48B6 /* OpenSans-SemiBold.ttf in Resources */,
+				DB136CF427336394007E48B6 /* Colors.xcassets in Resources */,
+				DB136D0C2733656A007E48B6 /* OpenSans-Regular.ttf in Resources */,
+				DB136C532731C133007E48B6 /* Assets.xcassets in Resources */,
+				DB136D0E2733656A007E48B6 /* OpenSans-Bold.ttf in Resources */,
+				DB136D0D2733656A007E48B6 /* mono.ttf in Resources */,
+				DB136D0B2733656A007E48B6 /* OpenSans-CondBold.ttf in Resources */,
+				DB136C9C2731D9E5007E48B6 /* GoogleService-Info.plist in Resources */,
+				DB136D0F2733656A007E48B6 /* OpenSans-ExtraBold.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DB136C472731C130007E48B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB136CB827330503007E48B6 /* CustomerListPublisher.swift in Sources */,
+				DB136CF027335F2F007E48B6 /* ModalPresentationController.swift in Sources */,
+				DB136CD227331E54007E48B6 /* LeadDetailView.swift in Sources */,
+				DB136CE627335DC5007E48B6 /* UINavigationBar+Extensions.swift in Sources */,
+				DB136C6C2731C1B3007E48B6 /* Configuration.swift in Sources */,
+				DB136CA72732DE98007E48B6 /* MainView.swift in Sources */,
+				DB136CA32732DCB2007E48B6 /* CreateContractorUseCase.swift in Sources */,
+				DB136CEE27335E73007E48B6 /* ViewModel.swift in Sources */,
+				DB136C932731D38B007E48B6 /* CreateProjectUseCase.swift in Sources */,
+				DB136CAB2732E463007E48B6 /* UpdateProjectUseCase.swift in Sources */,
+				DB136CBC27330C25007E48B6 /* ProjectState.swift in Sources */,
+				DB136CB12732F4FC007E48B6 /* GetContractorsUseCase.swift in Sources */,
+				DB136C5E2731C177007E48B6 /* FirebaseService.swift in Sources */,
+				DB136C672731C1A8007E48B6 /* SWCache.swift in Sources */,
+				DB136CD527331E85007E48B6 /* LeadListView.swift in Sources */,
+				DB136C742731C48B007E48B6 /* ServiceErrors.swift in Sources */,
+				DB136C4F2731C130007E48B6 /* HackathonApp.swift in Sources */,
+				DB136D1827336946007E48B6 /* LogoutUseCase.swift in Sources */,
+				DB136C612731C19E007E48B6 /* Logger.swift in Sources */,
+				DB136C8B2731CD5C007E48B6 /* Project.swift in Sources */,
+				DB136C982731D5E3007E48B6 /* ContractorListPublisher.swift in Sources */,
+				DB136C962731D47A007E48B6 /* ValuePublisher.swift in Sources */,
+				DB136CBA27330BF8007E48B6 /* Customer.swift in Sources */,
+				DB136C782731C4BF007E48B6 /* Environment+Extensions.swift in Sources */,
+				DB136D1E27337345007E48B6 /* SignIn+ViewModel.swift in Sources */,
+				DB136C682731C1A8007E48B6 /* CacheItem.swift in Sources */,
+				DB136C722731C488007E48B6 /* SWEnvironment.swift in Sources */,
+				DB136CEC27335E5E007E48B6 /* Header+ViewModel.swift in Sources */,
+				DB136C662731C1A8007E48B6 /* Cache.swift in Sources */,
+				DB136CD927335454007E48B6 /* LeadDetail+ViewModel.swift in Sources */,
+				DB136C7A2731C4D8007E48B6 /* Constants.swift in Sources */,
+				DB136D1C27337304007E48B6 /* SignInView.swift in Sources */,
+				DB136C852731C870007E48B6 /* Interactor.swift in Sources */,
+				DB136CC027330DC3007E48B6 /* ProjectStateListPublisher.swift in Sources */,
+				DB136CD02733165E007E48B6 /* UpdateProjectStateUseCase.swift in Sources */,
+				DB136CC227330E4A007E48B6 /* GetCustomersUseCase.swift in Sources */,
+				DB136C6A2731C1AD007E48B6 /* DIContainer.swift in Sources */,
+				DB136C9A2731D700007E48B6 /* ProjectListPublisher.swift in Sources */,
+				DB136CB627330448007E48B6 /* UserDefaults+Extensions.swift in Sources */,
+				DB136CE0273354D1007E48B6 /* CreateContractor+ViewModel.swift in Sources */,
+				DB136CE2273354ED007E48B6 /* Main+ViewModel.swift in Sources */,
+				DB136CE827335DD9007E48B6 /* Color+Extension.swift in Sources */,
+				DB136CEA27335DE4007E48B6 /* Font+Extensions.swift in Sources */,
+				DB136C822731C7C0007E48B6 /* ProjectType.swift in Sources */,
+				DB136CBE27330C71007E48B6 /* ProjectStatus.swift in Sources */,
+				DB136CAD2732E47C007E48B6 /* UpdateContractorUseCase.swift in Sources */,
+				DB136CCA27331467007E48B6 /* CreateCustomerUseCase.swift in Sources */,
+				DB136D20273373BF007E48B6 /* LogInUseCase.swift in Sources */,
+				DB136D1A27336AE0007E48B6 /* PreferencesPublisher.swift in Sources */,
+				DB136CD627331E85007E48B6 /* CreateContractorView.swift in Sources */,
+				DB136D1627336916007E48B6 /* SettingsView+ViewModel.swift in Sources */,
+				DB136C622731C19E007E48B6 /* SWLogger.swift in Sources */,
+				DB136C892731CD3C007E48B6 /* GetProjectsUseCase.swift in Sources */,
+				DB136D14273368FF007E48B6 /* SettingsView.swift in Sources */,
+				DB136CE427335DB7007E48B6 /* HeaderModifier.swift in Sources */,
+				DB136CCE27331654007E48B6 /* UpdateCustomerUseCase.swift in Sources */,
+				DB136CCC2733147B007E48B6 /* CreateProjectStateUseCase.swift in Sources */,
+				DB136C802731C734007E48B6 /* Contractor.swift in Sources */,
+				DB136CDE273354AC007E48B6 /* LeadList+ViewModel.swift in Sources */,
+				DB136CB427330413007E48B6 /* Preferences.swift in Sources */,
+				DB136CDB27335479007E48B6 /* CustomerInfoLabelView.swift in Sources */,
+				DB136CA12732C5C9007E48B6 /* DecodeArray.swift in Sources */,
+				DB136CC427330E5C007E48B6 /* GetProjectStatesUseCase.swift in Sources */,
+				DB136C872731C883007E48B6 /* FirebaseInteractor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		DB136C572731C133007E48B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DB136C582731C133007E48B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DB136C5A2731C133007E48B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Hackathon/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Hackathon/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sherwin.Hackathon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DB136C5B2731C133007E48B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Hackathon/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Hackathon/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sherwin.Hackathon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DB136C462731C130007E48B6 /* Build configuration list for PBXProject "Hackathon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB136C572731C133007E48B6 /* Debug */,
+				DB136C582731C133007E48B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB136C592731C133007E48B6 /* Build configuration list for PBXNativeTarget "Hackathon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB136C5A2731C133007E48B6 /* Debug */,
+				DB136C5B2731C133007E48B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DB136C8F2731D285007E48B6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DB136C902731D285007E48B6 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DB136C8F2731D285007E48B6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = DB136C432731C130007E48B6 /* Project object */;
+}
