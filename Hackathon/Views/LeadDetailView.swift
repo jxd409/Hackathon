@@ -2,7 +2,8 @@ import SwiftUI
 
 struct LeadDetailView: View {
     
-    @State var project: Project
+    var project: Project
+    var projectState: ProjectState
 
     var viewModel = ViewModel()
         
@@ -20,7 +21,7 @@ struct LeadDetailView: View {
             
             // TODO: alignment center
             Button("ACCEPT") {
-                viewModel.accept(project: project)
+                viewModel.accept(project: project, projectState: projectState)
             }
         }
         

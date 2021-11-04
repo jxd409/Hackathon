@@ -3,27 +3,17 @@ import SwiftUI
 extension LeadDetailView {
     class ViewModel: ObservableObject {
 
-        let preferences: Preferences
         let updateProjectState: UpdateProjectStateUseCase
 
-        init(preferences: Preferences = DIContainer.shared.resolve(),
-             updateProjectState: UpdateProjectStateUseCase = DIContainer.shared.resolve()) {
-
-            self.preferences = preferences
+        init(updateProjectState: UpdateProjectStateUseCase = DIContainer.shared.resolve()) {
             self.updateProjectState = updateProjectState
         }
 
-        func accept(project: Project) {
-            guard let contractorId = preferences.accountId else {
-                return
-            }
+        func accept(project: Project, projectState: ProjectState) {
+            var newProjectState = projectState
+            newProjectState.projectStatus = .accepted
 
-            let projectState = ProjectState(contractorId: contractorId,
-                                            projectId: project.id,
-                                            projectStatus: .accepted)
-
-            updateProjectState.updateProjectState(projectState: projectState)
-
+            updateProjectState.updateProjectState(projectState: newProjectState)
         }
     }
 }

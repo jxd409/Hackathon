@@ -29,7 +29,6 @@ class FirebaseInteractor: Interactor<FirebaseService>, GetContractorsUseCase {
             self.service.getContractors()
                 .decode(type: DecodedArray<Contractor>.self, decoder: JSONDecoder())
                 .sink { completion in
-                    print(completion)
                     switch completion {
                     case .failure(_): return promise(.failure(.systemFailure))
                     case .finished: break
@@ -54,8 +53,7 @@ extension FirebaseInteractor: GetProjectsUseCase {
                 .decode(type: DecodedArray<Project>.self, decoder: JSONDecoder())
                 .sink { completion in
                     switch completion {
-                    case .failure(let error):
-                        print(error)
+                    case .failure(_):
                         return promise(.failure(.systemFailure))
                     case .finished: break
                     }
@@ -80,8 +78,7 @@ extension FirebaseInteractor: GetCustomersUseCase {
                 .decode(type: DecodedArray<Customer>.self, decoder: JSONDecoder())
                 .sink { completion in
                     switch completion {
-                    case .failure(let error):
-                        print(error)
+                    case .failure(_):
                         return promise(.failure(.systemFailure))
                     case .finished: break
                     }
@@ -105,8 +102,7 @@ extension FirebaseInteractor: GetProjectStatesUseCase {
                 .decode(type: DecodedArray<ProjectState>.self, decoder: JSONDecoder())
                 .sink { completion in
                     switch completion {
-                    case .failure(let error):
-                        print(error)
+                    case .failure(_):
                         return promise(.failure(.systemFailure))
                     case .finished: break
                     }

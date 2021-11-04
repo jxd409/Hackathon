@@ -8,9 +8,12 @@ struct LeadListView: View {
     var body: some View {
                 
         List {
-            ForEach(viewModel.projects, id:\.self) { project in
-                NavigationLink(destination: LeadDetailView(project: project)) {
-                    Text(project.name)
+            ForEach(viewModel.values.indices, id: \.self) { index in
+                if let value = viewModel.values[index] {
+                    NavigationLink(destination: LeadDetailView(project: value.project,
+                                                               projectState: value.projectState)) {
+                        Text(value.project.name)
+                    }
                 }
             }
         }

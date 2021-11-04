@@ -5,7 +5,7 @@ extension LeadListView: ViewModel {
 
     class ViewModel: ObservableObject {
 
-        @Published var projects = [Project]()
+        @Published var values = [(projectState: ProjectState, project: Project)]()
 
         let preferences: Preferences
         let getProjectsUseCase: GetProjectsUseCase
@@ -29,8 +29,6 @@ extension LeadListView: ViewModel {
                     }
                 } receiveValue: { [weak self] projects in
 
-                    print(projects)
-
                     guard let self = self else { return }
 
                     getProjectStatesUseCase.getProjectStates()
@@ -38,19 +36,16 @@ extension LeadListView: ViewModel {
                         .receive(on: DispatchQueue.main)
                         .sink { projectStates in
 
-                            let filteredProjectIds = projectStates.filter { projectState in
+                            let filteredProjectStates = projectStates.filter { projectState in
                                 projectState.contractorId == self.preferences.accountId
-                            }.map { $0.projectId }
-
-                            print(filteredProjectIds)
-
-                            let filteredProjects = projects.filter { project in
-                                filteredProjectIds.contains(project.id)
                             }
 
-                            print(filteredProjects)
+                            filteredProjectStates.forEach { projectState in
+                                if let project = projects.first(where: { $0.id == projectState.projectId }) {
+                                    self.values.append((projectState: projectState, project: project))
+                                }
+                            }
 
-                            self.projects = filteredProjects
                         }.store(in: &self.cancellables)
 
                 }
