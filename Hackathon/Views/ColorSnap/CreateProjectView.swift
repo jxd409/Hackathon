@@ -66,7 +66,7 @@ struct CreateProjectView: View {
             }.disabled(!viewModel.canSave)
         }
         
-        .navigationTitle("Create Project")
+        .navigationTitle("My Project")
     }
 }
 

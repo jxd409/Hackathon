@@ -14,19 +14,16 @@ struct MainView: View {
                         Text("Create new project")
                     }
                 } else {
-                if viewModel.isLoggedIn {
-                    NavigationLink(destination: LeadListView()) {
-                        Text("Show jobs available")
+                    if viewModel.isLoggedIn {
+                        LeadListView()
+                    } else {
+                        NavigationLink(destination: CreateContractorView()) {
+                            Text("Create a Pro Profile")
+                        }
+                        NavigationLink(destination: SignInView(viewModel: .init())) {
+                            Text("Sign In")
+                        }
                     }
-                } else {
-                    NavigationLink(destination: CreateContractorView()) {
-                        Text("Create a Pro Profile")
-                    }
-                    NavigationLink(destination: SignInView(viewModel: .init())) {
-                        Text("Sign In")
-                    }
-
-                }
                 }
             }
             .navigationBarTitleDisplayMode(.inline)
